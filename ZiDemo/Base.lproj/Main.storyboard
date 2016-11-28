@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2mi-wp-SW4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bY0-d4-Spu">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2mi-wp-SW4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="MtR-zS-Y26">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="c2A-Pm-BFX" kind="relationship" relationship="viewControllers" id="vku-Zg-fri"/>
+                        <segue destination="JvP-dJ-gse" kind="relationship" relationship="viewControllers" id="Wwa-FD-ogk"/>
+                        <segue destination="oop-6t-RlH" kind="relationship" relationship="viewControllers" id="IOe-Wc-HCI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yRD-Hj-EMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261.60000000000002" y="791.15442278860576"/>
+        </scene>
+        <!--Creation-->
+        <scene sceneID="vtX-Wg-vNd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Creation" id="c2A-Pm-BFX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="创作中心" image="icon_write_active" selectedImage="icon_write_active" id="vEr-zO-BcH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7B-TP-hWn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="629"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="7kP-6G-9SL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Explore" id="JvP-dJ-gse" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="精品推荐" image="icon_home_active_20x22_" id="l0G-IF-bUH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98D-k2-4I5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071" y="791"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="uBB-uH-OKA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="oop-6t-RlH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="个人中心" image="icon_me_active" id="08Q-5g-4CU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tE1-Rh-Ah5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1075" y="943"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_home_active_20x22_" width="20" height="22"/>
+        <image name="icon_me_active" width="18" height="18"/>
+        <image name="icon_write_active" width="32" height="32"/>
+    </resources>
+</document>

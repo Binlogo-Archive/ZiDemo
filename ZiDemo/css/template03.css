@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*base*/
+html{-webkit-text-size-adjust:none;-ms-text-size-adjust:100%;-ms-touch-action:none;margin:0;padding:0;height:100%;}
+body{-webkit-overflow-scrolling:touch;-webkit-font-smoothing:antialiased;min-width:320px;font-size:62.5%;margin:0;word-break:break-word;}
+div,ul,ol,li,dl,dt,dd,h1,h2,h3,h5,h6,p,b,i,a,header,mark,sup,sub,hr,br,video,audio,blockquote,time,figure,figcaption,img,footer,address{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+A,A:link,A:visited,A:active{color:#3a7bf7;-webkit-touch-callout:none;text-decoration:none;outline:none;cursor:pointer;}
+A:hover{color:#5991fa;}
+figure{padding:0px;margin:0px;}
+img,p,figure,h2,h3{display:block;overflow:hidden;}
+img{width:100%;border:0;margin:0px;}
+h2,h3,h6,b{font-weight:normal;}
+/*font*/
+body{font-family:'FZLONGZFW--GB1-0';max-width:100%;color:#000;background:#fff;padding:23px 0px 25px 0px;margin:0;writing-mode:tb-rl;writing-mode:vertical-rl;
+-webkit-writing-mode:vertical-rl;/*-webkit-text-orientation:upright;*/vertical-align:middle;}
+.container{display:block;overflow-x:auto;}
+h1{font-size:1.62em;line-height:2.6em;padding:0px 19px 0px 20px;margin:0px;font-weight:bold;}
+address{font-style:normal;display:block;margin-right:83px;cursor:pointer;}
+h6{color:#000;font-size:1.4em;line-height:1.6em;margin-left:7px;display:block;}
+time{color:#000;font-size:1.4em;line-height:1.6em;display:block;margin-left:19px;}
+p{font-size:1.6em;line-height:2.12em;padding:0px;}
+.UserInfoResize{position:absolute;left:0px;}
+ul,ol,dl,b,i,a,header,mark,sup,sub,hr,video,audio,blockquote,figure,img,footer,body .footbar,body .footbar-s4{display:none;opacity:0;}
+/*2016年4月22日12:15:38*/

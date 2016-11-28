@@ -1,0 +1,65 @@
+@charset "utf-8";
+/*base*/
+html{-webkit-text-size-adjust:none;-ms-text-size-adjust:100%;-ms-touch-action:none;margin:0;padding:0;height:100%;}
+body{-webkit-overflow-scrolling:touch;-webkit-font-smoothing:antialiased;min-width:320px;font-size:62.5%;margin:0;text-align:center;word-break:break-word;}
+div,ul,ol,li,dl,dt,dd,h1,h2,h3,h5,h6,p,b,i,a,header,mark,sup,sub,hr,br,video,audio,blockquote,time,figure,figcaption,img,footer,address{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+A,A:link,A:visited,A:active{color:#3a7bf7;-webkit-touch-callout:none;text-decoration:none;outline:none;cursor:pointer;}
+A:hover{color:#5991fa;}
+figure{padding:32px 0px 0px 0px;}
+img,p,figure,h2,h3{display:block;overflow:hidden;}
+img{border:0;margin:0px;}
+address{font-style:normal;}
+p + p{padding-top:0px;}
+h1,h2,h3,h6,b{font-weight:normal;}
+/*font*/
+@font-face {font-family:'SpecialSymbol';src:url("../images/template04/FZBoyaKanSongs.ttf") format("truetype");}
+@font-face {font-family:'SpecialSymbol-title';src:url("../images/template04/STSongti-SC-Black.ttf") format("truetype");}
+body{font-family:'FZBYKSK--GBK1-0';max-width:100%;padding:0px 0px 32px 0px;color:#000;background:#f1f1f1;}
+h1,h2{font-family:'STSongti-SC-Black';}
+p b,h3{font-family:'Songti TC';}
+figcaption,blockquote{font-family:'STFangsong';}
+/*文本两端对齐*/
+p,blockquote{text-align:justify;text-justify:inter-word;}
+/*page左右边距*/
+p,h1,h2,h3,ul,ol,figure,address{margin:0px 32px;}
+/*title*/
+h1{font-size:4.8em;line-height:1em;padding:125px 0px 64px 0px;text-align:left;overflow:hidden;}
+h1:not(.noafter):not(.noafterall):after{content:'。';color:#e1cfa9;font-family:'SpecialSymbol-title'}
+h1 span,h1.noafterall{color:#e1cfa9;}
+h2{font-size:2.4em;line-height:32px;padding:64px 0px 9px 0px;text-align:left;}
+h3{font-size:1.6em;display:block;overflow:hidden;padding:32px 0px 0px 0px;text-align:left;}
+/*正文|图片|图片描述*/
+p{overflow:hidden;display:block;padding:16px 0px;font-size:1.6em;line-height:32px;}
+p a{border-bottom:#ce0b24 1px solid;}
+figure img{max-width:100%;padding:0px 0px 16px 0px;margin:0px auto;}
+figcaption{display:block;color:#919191;border-top:#e5e5e5 0.5px solid;border-bottom:#e5e5e5 0.5px solid;padding:6px 0px;line-height:32px;font-size:1.2em;margin-bottom:16px;}
+/*用户信息*/
+address{padding:0px 0px 42px 2px;display:block;overflow:hidden;}
+h6,time{font-size:1.2em;line-height:13px;display:block;width:11px;float:left;writing-mode:tb-rl;-webkit-writing-mode:vertical-rl;/*-webkit-text-orientation:upright;*/}
+h6{position:relative;margin:0px;}
+time{margin:0px 0px 0px 7px;}
+h6:before,time:before{font-family:'SpecialSymbol';}
+h6:before,time:before{display:block;float:left;content:'◎';margin:0px 0px 1px 0px;font-size:12px;}
+h6:after{content:'著';margin-top:8px;font-size:12px;position:absolute;font-weight:normal;}
+/*导语引用*/
+blockquote{position:relative;padding:0px 32px 0px 32px;margin:32px auto;font-size:1.6em;color:#000;line-height:30px;overflow:hidden;}
+blockquote:before{background:#000;content:'';width:3px;height:100%;position:absolute;left:16px;bottom:8px;overflow:hidden;}
+blockquote:after{background:#f1f1f1;content:'';width:3px;height:7px;position:absolute;left:16px;top:0px;overflow:hidden;}
+/*无序有序列表*/
+ol,ul{text-align:left;padding:0px;line-height:32px;font-size:1.5em;}
+ol li,ul li{padding:8px 0px 8px 0px;}
+ul{padding:22px 0px 22px 15px;}
+ol{padding:22px 0px 22px 21px;}
+ul{list-style-type:square;}
+/*分割线*/
+hr{height:1px;overflow:hidden;border:none;background:#e1cfa9;width:38px;margin:64px auto;}
+/*pc|ipad*/
+@media only screen and (min-width:751px){
+	h3{font-size:1.8em;}
+	figcaption{border-top:#e5e5e5 1px solid;border-bottom:#e5e5e5 1px solid;}
+	p,h1,h2,h3,ul,ol,figure,address,.footbar{margin-left:auto;margin-right:auto;max-width:670px;}
+	blockquote{max-width:734px;}
+	hr{max-width:285px;}
+}
+header{display:none;opacity:0;}
+/*2016年5月25日11:43:59*/

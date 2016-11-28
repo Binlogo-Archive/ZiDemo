@@ -1,0 +1,66 @@
+@charset "utf-8";
+/*base*/
+html{-webkit-text-size-adjust:none;-ms-text-size-adjust:100%;-ms-touch-action:none;margin:0;padding:0;height:100%;}
+body{-webkit-overflow-scrolling:touch;-webkit-font-smoothing:antialiased;min-width:320px;font-size:62.5%;margin:0;text-align:center;word-break:break-word;}
+div,ul,ol,li,dl,dt,dd,h1,h2,h3,h5,h6,p,b,i,a,header,mark,sup,sub,hr,br,video,audio,blockquote,time,figure,figcaption,img,footer,address,span{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+A,A:link,A:visited,A:active{color:#3a7bf7;-webkit-touch-callout:none;text-decoration:none;outline:none;cursor:pointer;}
+A:hover{color:#5991fa;}
+figure{padding:16px 0px 0px 0px;margin:0px;}
+img,p,figure,h2,h3{display:block;overflow:hidden;}
+img{border:0;margin:0px;}
+p + p{padding-top:0px;}
+h1,h2,h3,h6,b{font-weight:normal;}
+/*font*/
+@font-face{font-family:"SpecialSymbol";src: url("../images/template05/STSongti-SC-Regular.ttf") format("truetype");}
+body{font-family:'STSongti-SC-Regular';max-width:100%;padding:0px 0px 32px 0px;color:#333;background:#fff;}
+h1,h2,p b,h3{font-family:'STSongti-SC-Black';}
+address{font-family:'Songti TC';font-style:normal;}
+address span{font-family:'Songti TC','h6';}
+/*文本两端对齐*/
+p,blockquote{text-align:justify;text-justify:inter-word;}
+/*page左右边距*/
+p,h2,h3,ul,ol,figure{margin:0px 40px;}
+/*title*/
+h1{font-size:4.8em;line-height:56px;padding:64px 20px 24px 20px;margin:0px;}
+h2{font-size:2.4em;line-height:33px;text-align:left;letter-spacing:1.2px;padding:16px 0px;}
+h3{font-size:1.6em;line-height:22px;text-align:left;letter-spacing:0.4px;color:#333;display:block;overflow:hidden;padding:16px 0px;}
+/*正文|图片|图片描述*/
+p{overflow:hidden;display:block;padding:10px 0px;font-size:1.5em;line-height:30px;letter-spacing:0.6px;}
+p a{border-bottom:#ce0b24 1px solid;}
+figure img{max-width:100%;padding:0px 0px 16px 0px;margin:0px auto;}
+figcaption{display:block;color:#999;/*margin:0px 64px;*/padding:16px 0px;line-height:20px;font-size:1.2em;letter-spacing:2.4px;}
+/*用户信息*/
+address{margin:24px 0px 64px 0px;padding:0px;display:block;overflow:hidden;}
+time,h6,span{display:block;font-size:1.2em;line-height:24px;letter-spacing:0.6px;}
+h6,span{padding:0px;margin:0px;}
+/*导语引用*/
+blockquote{position:relative;padding:36px 39px 16px 39px;margin:0px;font-size:1.4em;color:#999;line-height:30px;letter-spacing:0.6px;}
+blockquote:before{content:'';width:15px;height:13px;position:absolute;margin:0px;overflow:hidden;
+background-image:url('../images/template05/quotation_marks_left.png');
+background-repeat:no-repeat;background-position:left top;background-size:15px 13px;left:20px;top:16px;}
+/*无序有序列表*/
+ol,ul{text-align:left;font-size:1.4em;line-height:30px;letter-spacing:0.6px;padding:16px 0px 16px 32px;position:relative;list-style-type:none;}
+ul li:before{background:#ce0b24;content:'';width:8px;height:8px;overflow:hidden;position:absolute;left:8px;margin-top:13px;}
+ol{counter-reset:sectioncounter;}
+ol li:before{content:counter(sectioncounter) ".";counter-increment:sectioncounter;color:#ce0b24;position:absolute;left:8px;font-family:"SpecialSymbol";}
+/*分割线*/
+hr{height:1px;overflow:hidden;border:none;background:#e47987;width:24px;margin:48px auto;}
+hr.seperatorlast{margin:64px auto 80px auto;}
+/*pc|ipad*/
+@media only screen and (min-width:751px){
+	p,h1,h2,h3,ul,ol,figure,address,.footbar{margin-left:auto;margin-right:auto;max-width:624px;}
+	blockquote{margin-left:auto;margin-right:auto;max-width:704px;}
+	h1{padding:160px 20px 50px 20px;}
+	address{margin-top:50px;}
+	time,h6,span{display:block;font-size:1.6em;line-height:32px;letter-spacing:0.8px;}
+	blockquote{font-size:1.6em;line-height:36px;letter-spacing:0.8px;}
+	p{padding:10px 0px;font-size:1.6em;line-height:36px;letter-spacing:0.8px;}
+	h2{line-height:42px;letter-spacing:1.5px;}
+	h3{letter-spacing:0.8px;}
+	ol,ul{font-size:1.6em;line-height:36px;letter-spacing:0.8px;}
+	figcaption{font-size:1.6em;line-height:32px;letter-spacing:3.2px;}
+	hr{margin:68px auto;}
+	hr.seperatorlast{margin:84px auto 100px auto;}
+}
+header{display:none;opacity:0;}
+/*2016年5月25日10:45:16*/

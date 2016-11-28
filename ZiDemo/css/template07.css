@@ -1,0 +1,67 @@
+@charset "utf-8";
+/*base*/
+html{-webkit-text-size-adjust:none;-ms-text-size-adjust:100%;-ms-touch-action:none;margin:0;padding:0;height:100%;}
+body{-webkit-overflow-scrolling:touch;-webkit-font-smoothing:antialiased;min-width:320px;font-size:62.5%;margin:0;text-align:center;word-break:break-word;}
+div,ul,ol,li,dl,dt,dd,h1,h2,h3,h5,h6,p,b,i,a,header,mark,sup,sub,hr,br,video,audio,blockquote,time,figure,figcaption,img,footer,address,pre,code{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+A,A:link,A:visited,A:active{color:#3a7bf7;-webkit-touch-callout:none;text-decoration:none;outline:none;cursor:pointer;}
+A:hover{color:#5991fa;}
+figure{padding:16px 0px 0px 0px;margin:0px;}
+img,p,figure,h2,h3,pre,pre code{display:block;overflow:hidden;}
+img{/*width:100%;*/border:0;margin:0px;}
+address{font-style:normal;}
+p + p{padding-top:0px;}
+h1,h2,h3,h6,b{font-weight:normal;}
+/*font*/
+@font-face {font-family:"AGaramondPro-Regular";src: url("../images/template07/AGaramondPro-Regular.ttf") format("truetype");}
+body{font-family:'STSongti-SC-Regular';max-width:100%;padding:0px 0px 32px 0px;color:#2D3033;background:#fff;}
+h1{font-family:'STSongti-SC-Black';}
+figcaption,h2,h3{font-family:'SourceHanSansCN-Light';}
+blockquote,figcaption{font-family:'STKaiti-SC-Regular';}
+time{font-family:'AGaramondPro-Regular'}
+h2,h3{font-family:'Songti TC'}
+p b{color:#000;}
+/*文本两端对齐*/
+p,blockquote{text-align:justify;text-justify:inter-word;}
+/*page左右边距*/
+p,h2,h3,figcaption,address,ul,ol{margin:0px 30px;}
+/*title*/
+h1{font-size:3.6em;line-height:40px;padding:0px 20px 0px 20px;margin:50px auto 0px auto;font-weight:normal;letter-spacing:0.6px;
+color:#2D3033;max-height:82px;overflow:hidden;}
+h2{font-size:2.4em;line-height:33px;text-align:left;letter-spacing:0.2px;padding:16px 0px;}
+h3{text-align:left;font-size:1.8em;line-height:24px;letter-spacing:0.2px;display:block;overflow:hidden;padding:16px 0px;}
+/*正文|图片|图片描述*/
+p{overflow:hidden;display:block;padding:10px 0px;font-size:1.6em;line-height:26px;letter-spacing:0.2px;}
+p a{border-bottom:#404040 1px solid;}
+figure img{/*width:100%;*/max-width:100%;border:0;padding:0px 0px 16px 0px;margin:0px auto;display:block;overflow:hidden;}
+figcaption{display:block;color:#909499;padding:0px 0px 16px 0px;line-height:18px;font-size:1.2em;}
+/*头图*/
+header{margin:0px auto;width:100%;background-repeat:no-repeat;background-position:center center;background-size:cover;position:relative;}
+header h1{color:#fff;top:50%;margin-top:-21px;left:0px;right:0px;text-shadow:0px 0px 5px #2D3033;position:absolute;}
+header img{width:100%;display:block;overflow:hidden;}
+/*用户信息*/
+address{margin:16px 0px 16px 0px;padding:0px;display:block;overflow:hidden;cursor:pointer;}
+h6{font-size:1.2em;color:#2D3033;line-height:22px;margin:0px;padding:0px;letter-spacing:0.6px;}
+time{font-size:1em;color:#909499}
+h6,time,address img{display:block;}
+address img{width:35px;height:35px;border-radius:35px;margin:0px auto;border:0;overflow:hidden;}
+/*导语引用*/
+blockquote{position:relative;padding:0px 0px 0px 10px;margin:16px 30px 16px 30px;font-size:1.4em;color:#909499;line-height:22px;border-left:2px solid #C8CACC}
+/*无序有序列表*/
+ol,ul{text-align:left;line-height:22px;font-size:1.4em;padding:16px 0px 16px 16px;position:relative;list-style-type:none;letter-spacing:0.2px;}
+ul li:before{background:#c8cacc;content:'';width:5px;height:5px;border-radius:5px;overflow:hidden;position:absolute;left:0px;margin-top:9px;}
+ol{counter-reset:sectioncounter;}
+ol li:before{content:counter(sectioncounter) ".";counter-increment:sectioncounter;color:#909499;position:absolute;left:0px;font-family:"SpecialSymbol";}
+/*分割线*/
+hr{width:7px;height:7px;background:#ebedf0;overflow:hidden;border:none;margin:24px auto;transform: rotate(-45deg);}
+/*code*/
+pre{margin:20px 30px;padding:10px;display: block; background-color: #fafafa; border: 1px solid hsl(0, 0%, 90%); border-radius: 5px; overflow: hidden;text-align: left;}
+code{text-align: left; background-color: transparent !important; white-space: pre-wrap; font: normal 14px Consolas, Monaco, monospace;}
+p code{background-color: #fafafa !important;border: 1px solid hsl(0, 0%, 90%);border-radius: 5px !important;white-space: normal !important;padding: 0px 5px;}
+.tl{text-align:left;}
+.tr{text-align:right;}
+.tc{text-align:center;}
+/*pc|ipad*/
+@media only screen and (min-width:751px){
+	p,h1,h2,h3,hr,ul,ol,figure,.footbar,blockquote,address,figcaption,pre{margin-left:auto;margin-right:auto;max-width:750px;}
+}
+/*2016年5月24日23:04:19*/

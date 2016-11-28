@@ -1,0 +1,5 @@
+github "ReactiveX/RxSwift"
+github "Alamofire/Alamofire"
+github "SnapKit/SnapKit"
+github "onevcat/Kingfisher" ~> 3.0
+github "IBAnimatable/IBAnimatable"
